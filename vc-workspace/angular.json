@@ -18,6 +18,7 @@
           "configurations": {
             "production": {
               "tsConfig": "projects/vc-components/tsconfig.lib.prod.json"
+
             }
           }
         },
@@ -203,7 +204,7 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
