@@ -1,0 +1,13 @@
+<vc-game-panel>
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center ">
+      <vc-title text="Who Is The Impostor?"></vc-title>
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let player of players" class=" d-flex justify-content-around  col-md-6  col-lg-6 col-xs-6">
+      <vc-player-item [playerName]='player.name' [playerColor]='player.color' [startedCall]='player.startedCall'>
+      </vc-player-item>
+    </div>
+  </div>
+</vc-game-panel>

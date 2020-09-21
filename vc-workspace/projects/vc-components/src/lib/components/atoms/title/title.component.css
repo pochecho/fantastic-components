@@ -1,0 +1,10 @@
+h1,h2,h3,h4,h5,h6{
+    --width: 5px;
+    --color:#000;
+    text-shadow: 0 0 var(--width)   var(--color);
+    -moz-text-shadow: 0 0 var(--width)   var(--color);
+    -webkit-text-shadow: 0 0 var(--width)   var(--color);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
