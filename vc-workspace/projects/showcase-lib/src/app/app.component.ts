@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { AlertComponent } from 'vc-components-expo';
+import * as M  from 'marzipano';
+
+// import {  Layer } from 'marzipano';
 interface IPlayer {
   name: string;
   color: string;
@@ -10,6 +14,7 @@ interface IPlayer {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  a: AlertComponent;
   players: IPlayer[] = [
     {
       name: 'Monóxido',
@@ -41,4 +46,7 @@ export class AppComponent {
 
     }
   ];
+  constructor(){
+    const u = new M.Layer();
+  }
 }

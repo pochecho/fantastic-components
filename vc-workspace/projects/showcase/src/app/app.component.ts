@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-
+import { AtomsModule   } from "../../../vc-components/src/public-api";
+import { AlertComponent } from 'projects/vc-components/src/lib/components/atoms/alert/alert.component';
 interface IPlayer {
   name: string;
   color: string;
   startedCall: boolean;
 }
+
+
 
 @Component({
   selector: 'app-root',
@@ -12,6 +15,8 @@ interface IPlayer {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  a:AlertComponent;
 
   players: IPlayer[] = [
     {

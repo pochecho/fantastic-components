@@ -9,7 +9,7 @@ import { AvatarComponent } from './avatar/avatar.component';
   declarations: [
     TitleComponent,
     AlertComponent,
-    AvatarComponent
+    AvatarComponent,
   ],
   imports: [
     CommonModule

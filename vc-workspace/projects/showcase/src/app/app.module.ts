@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AtomsModule } from '../../../vc-components/src/lib/components/atoms/atoms.module';
 import { MoleculesModule } from '../../../vc-components/src/lib/components/molecules/molecules.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { MoleculesModule } from '../../../vc-components/src/lib/components/molec
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AtomsModule, MoleculesModule
+    AtomsModule, MoleculesModule, NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

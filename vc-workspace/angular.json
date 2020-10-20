@@ -18,7 +18,6 @@
           "configurations": {
             "production": {
               "tsConfig": "projects/vc-components/tsconfig.lib.prod.json"
-
             }
           }
         },
@@ -69,6 +68,7 @@
               "projects/showcase/src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/showcase/src/styles.scss"
             ],
             "scripts": []
@@ -83,7 +83,7 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
@@ -133,6 +133,7 @@
               "projects/showcase/src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/showcase/src/styles.scss"
             ],
             "scripts": []
@@ -203,7 +204,8 @@
                 }
               ],
               "optimization": true,
-              "outputHashing": "all",
+              "aot": true,
+              "outputHashing": "none",
               "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
@@ -285,7 +287,8 @@
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
     "analytics": false
   },
